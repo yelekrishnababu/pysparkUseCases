@@ -1,11 +1,6 @@
 from openpyxl import Workbook
 from openpyxl.reader.excel import load_workbook
 from pyspark.sql import SparkSession, DataFrameWriter
-import os
-import sys
-
-os.environ['PYSPARK_PYTHON'] = sys.executable
-os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 jdbcHostname = "sqlserver045.database.windows.net"
 jdbcPort = "1433"
 jdbcDatabase = "ky2910"
